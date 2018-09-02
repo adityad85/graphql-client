@@ -1,5 +1,9 @@
 import React from 'react';
+
+
 import BookList from '../components/BookList';
+import AddBook from '../components/AddBook';
+
 
 class App extends React.Component {
   render() {
@@ -7,6 +11,7 @@ class App extends React.Component {
       <div id="main">
         <h1>Heya</h1>
         <BookList />
+        <AddBook />
       </div>
     );
   }
