@@ -9,7 +9,7 @@ class App extends React.Component {
   render() {
     return (
       <div id="main">
-        <h1>Heya</h1>
+        <h1>Book List</h1>
         <BookList />
         <AddBook />
       </div>
