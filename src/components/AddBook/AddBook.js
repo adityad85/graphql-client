@@ -41,7 +41,7 @@ class AddBook extends Component {
       <form id="add-book" onSubmit={this.submitForm}>
         <div className="field">
           <label>Book Name</label>
-          <input type="text" onChange={e => this.setState({ name: e.target.value })} />
+          <input type="text" onChange={e => this.setState({ name: e.target.value })} required />
         </div>
 
         <div className="field">
@@ -51,6 +51,7 @@ class AddBook extends Component {
             onChange={(e) => {
               return this.setState({ genre: e.target.value });
             }}
+            required
           />
         </div>
 
@@ -59,6 +60,7 @@ class AddBook extends Component {
           <select onChange={e => this.setState({ authorId: e.target.value })}>
             <option>Select Author</option>
             {this.displayAuthors()}
+            required
           </select>
         </div>
 

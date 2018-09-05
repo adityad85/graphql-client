@@ -28,12 +28,12 @@ class AddAuthor extends Component {
       <form id="add-author" onSubmit={this.submitForm}>
         <div className="field">
           <label>Author Name</label>
-          <input type="text" onChange={e => this.setState({ name: e.target.value })} />
+          <input type="text" onChange={e => this.setState({ name: e.target.value })} required />
         </div>
 
         <div className="field">
           <label>Age</label>
-          <input type="text" onChange={e => this.setState({ age: e.target.value })} />
+          <input type="text" onChange={e => this.setState({ age: e.target.value })} required />
         </div>
 
         <button>
