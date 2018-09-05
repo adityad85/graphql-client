@@ -12,8 +12,10 @@ class App extends React.Component {
       <div id="main">
         <h1>Book List</h1>
         <BookList />
-        <AddBook />
-        <AddAuthor />
+        <div style={{ position: 'absolute', bottom: '0px' }}>
+          <AddBook />
+          <AddAuthor />
+        </div>
       </div>
     );
   }
